@@ -14,6 +14,8 @@
 		BFD9575828B0E0D000AF49C0 /* JunCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9575728B0E0D000AF49C0 /* JunCardTests.swift */; };
 		BFD9576228B0E0D000AF49C0 /* JunCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9576128B0E0D000AF49C0 /* JunCardUITests.swift */; };
 		BFD9576428B0E0D000AF49C0 /* JunCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9576328B0E0D000AF49C0 /* JunCardUITestsLaunchTests.swift */; };
+		BFD9577228B0E50500AF49C0 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFD9577128B0E50500AF49C0 /* Pacifico-Regular.ttf */; };
+		BFD9577528B0F6C400AF49C0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9577428B0F6C400AF49C0 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		BFD9575D28B0E0D000AF49C0 /* JunCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JunCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD9576128B0E0D000AF49C0 /* JunCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunCardUITests.swift; sourceTree = "<group>"; };
 		BFD9576328B0E0D000AF49C0 /* JunCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFD9577128B0E50500AF49C0 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		BFD9577328B0E72200AF49C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BFD9577428B0F6C400AF49C0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +99,11 @@
 		BFD9574528B0E0CF00AF49C0 /* JunCard */ = {
 			isa = PBXGroup;
 			children = (
+				BFD9577328B0E72200AF49C0 /* Info.plist */,
+				BFD9577028B0E4F500AF49C0 /* fonts */,
 				BFD9574628B0E0CF00AF49C0 /* JunCardApp.swift */,
 				BFD9574828B0E0CF00AF49C0 /* ContentView.swift */,
+				BFD9577428B0F6C400AF49C0 /* InfoView.swift */,
 				BFD9574A28B0E0D000AF49C0 /* Assets.xcassets */,
 				BFD9574C28B0E0D000AF49C0 /* Preview Content */,
 			);
@@ -125,6 +133,14 @@
 				BFD9576328B0E0D000AF49C0 /* JunCardUITestsLaunchTests.swift */,
 			);
 			path = JunCardUITests;
+			sourceTree = "<group>";
+		};
+		BFD9577028B0E4F500AF49C0 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BFD9577128B0E50500AF49C0 /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD9577228B0E50500AF49C0 /* Pacifico-Regular.ttf in Resources */,
 				BFD9574E28B0E0D000AF49C0 /* Preview Assets.xcassets in Resources */,
 				BFD9574B28B0E0D000AF49C0 /* Assets.xcassets in Resources */,
 			);
@@ -258,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD9574928B0E0CF00AF49C0 /* ContentView.swift in Sources */,
+				BFD9577528B0F6C400AF49C0 /* InfoView.swift in Sources */,
 				BFD9574728B0E0CF00AF49C0 /* JunCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +437,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JunCard/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JunCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +466,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"JunCard/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JunCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
